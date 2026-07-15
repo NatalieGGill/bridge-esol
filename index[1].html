@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bridge ESOL connects multilingual families, educators, and communities with practical educational resources." />
+  <title>Bridge ESOL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bridge ESOL home">
+      <span class="bridge-icon" aria-hidden="true">⌁</span>
+      <span>Bridge ESOL</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#families" data-i18n="navFamilies">Families</a>
+      <a href="#educators" data-i18n="navEducators">Educators</a>
+      <a href="#community" data-i18n="navCommunity">Community Resources</a>
+      <a href="#mission" data-i18n="navAbout">About Us</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <label class="language-control">
+      <span aria-hidden="true">🌐</span>
+      <span class="sr-only">Select language</span>
+      <select id="languageSelect" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="ht">Kreyòl</option>
+        <option value="pt">Português</option>
+      </select>
+    </label>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="welcome-line" data-i18n="welcome">Welcome! Bienvenidos! Byenveni! Bem-vindos!</p>
+        <h1>Bridge ESOL</h1>
+        <p class="hero-copy" data-i18n="heroCopy">
+          Helping multilingual students, families, and educators connect with resources.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#families" data-i18n="findResources">⌕&nbsp; Find Resources</a>
+          <button class="button secondary" id="askBridgeButton" data-i18n="askBridge">◌&nbsp; Ask Bridge AI</button>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="assets/bridge-esol-community.png" alt="Diverse people gathered around the globe" />
+      </div>
+    </section>
+
+    <section class="resource-cards" aria-label="Main resource areas">
+      <article class="resource-card" id="families">
+        <div class="card-icon">👨‍👩‍👧</div>
+        <h2 data-i18n="familiesTitle">Families</h2>
+        <p data-i18n="familiesText">
+          Access guides, tools, and resources to support your child's education and success.
+        </p>
+        <a href="#family-resources" data-i18n="familiesLink">Explore Family Resources →</a>
+      </article>
+
+      <article class="resource-card" id="educators">
+        <div class="card-icon">📖</div>
+        <h2 data-i18n="educatorsTitle">Educators</h2>
+        <p data-i18n="educatorsText">
+          Find lesson supports, differentiated instruction strategies, and AI-powered tools for your classroom.
+        </p>
+        <a href="#educator-tools" data-i18n="educatorsLink">Explore Educator Tools →</a>
+      </article>
+
+      <article class="resource-card" id="community">
+        <div class="card-icon">🏫</div>
+        <h2 data-i18n="communityTitle">Community Resources</h2>
+        <p data-i18n="communityText">
+          Discover local programs, services, and support for multilingual families in our community.
+        </p>
+        <a href="#community-list" data-i18n="communityLink">Explore Community Resources →</a>
+      </article>
+    </section>
+
+    <section class="mission" id="mission">
+      <div class="mission-label">
+        <span>✦</span>
+        <h2 data-i18n="missionTitle">Our Mission</h2>
+      </div>
+      <p data-i18n="missionText">
+        Bridge ESOL empowers multilingual learners and the people who support them with information, tools, and opportunities to thrive.
+      </p>
+    </section>
+
+    <section class="content-section" id="family-resources">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="familyEyebrow">For Families</p>
+        <h2 data-i18n="familyHeading">Navigate school with confidence.</h2>
+        <p data-i18n="familyIntro">Start with one of these practical guides.</p>
+      </div>
+      <div class="mini-grid">
+        <article><h3 data-i18n="enrollTitle">School Enrollment</h3><p data-i18n="enrollText">Learn what documents to bring and what questions to ask.</p></article>
+        <article><h3 data-i18n="conferenceTitle">Parent Conferences</h3><p data-i18n="conferenceText">Prepare questions about grades, language growth, and support.</p></article>
+        <article><h3 data-i18n="homeTitle">Learning at Home</h3><p data-i18n="homeText">Use simple routines to build reading and vocabulary skills.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section pale" id="educator-tools">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="educatorEyebrow">For Educators</p>
+        <h2 data-i18n="educatorHeading">Differentiate without starting over.</h2>
+        <p data-i18n="educatorIntro">Practical tools for supporting English learners.</p>
+      </div>
+      <div class="mini-grid">
+        <article><h3 data-i18n="lessonTitle">Lesson Differentiation</h3><p data-i18n="lessonText">Adjust language supports while keeping the same learning goal.</p></article>
+        <article><h3 data-i18n="framesTitle">Sentence Frames</h3><p data-i18n="framesText">Give students language structures for speaking and writing.</p></article>
+        <article><h3 data-i18n="familyCommTitle">Family Communication</h3><p data-i18n="familyCommText">Create clear, respectful, translation-ready messages.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="community-list">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="communityEyebrow">Community Support</p>
+        <h2 data-i18n="communityHeading">Connect with local help.</h2>
+        <p data-i18n="communityIntro">This directory will grow as verified community partners are added.</p>
+      </div>
+      <div class="mini-grid">
+        <article><h3 data-i18n="adultTitle">Adult English Classes</h3><p data-i18n="adultText">Find local language-learning opportunities for adults.</p></article>
+        <article><h3 data-i18n="foodTitle">Food and Family Support</h3><p data-i18n="foodText">Locate food assistance and family support services.</p></article>
+        <article><h3 data-i18n="libraryTitle">Libraries and Learning</h3><p data-i18n="libraryText">Explore free programs, technology, books, and tutoring.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+        <h2 data-i18n="contactHeading">Help us improve Bridge ESOL.</h2>
+        <p data-i18n="contactText">Share a resource idea or tell us what your family, classroom, or community needs.</p>
+      </div>
+      <a class="button primary" href="mailto:NatalieGGill14@gmail.com" data-i18n="contactButton">Send an Email</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Bridge ESOL</strong>
+    <span data-i18n="footer">Connecting multilingual families, educators, and communities.</span>
+    <span>© 2026 Natalie Gill</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
