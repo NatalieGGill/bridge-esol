@@ -1,249 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A practical resource hub for multilingual students, families, educators, and community partners." />
-  <title>ESOL Community Resource Center</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridge ESOL</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="ESOL Community Resource Center home">
-      <span class="brand-mark">E</span>
-      <span data-i18n="brand">ESOL Community Resource Center</span>
-    </a>
-    <div class="header-actions">
-      <label class="language-picker">
-        <span class="sr-only">Choose language</span>
-        <select id="languageSelect" aria-label="Choose language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="ht">Kreyòl Ayisyen</option>
-          <option value="pt">Português</option>
-        </select>
-      </label>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    </div>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#resources" data-i18n="nav_resources">Resources</a>
-      <a href="#families" data-i18n="nav_families">For Families</a>
-      <a href="#educators" data-i18n="nav_educators">For Educators</a>
-      <a href="#support" data-i18n="nav_support">Request Support</a>
-    </nav>
-  </header>
+<header>
+<h1>Bridge ESOL</h1>
+<p>Helping multilingual students, families, and educators connect with resources.</p>
+</header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero_eyebrow">Learn. Connect. Thrive.</p>
-        <h1 data-i18n="hero_title">Helping multilingual families navigate school with confidence.</h1>
-        <p class="hero-text" data-i18n="hero_text">
-          A welcoming, practical hub for English learners, families, educators, and community partners.
-          Find clear guidance, classroom tools, and support in one place.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#resources" data-i18n="explore_resources">Explore resources</a>
-          <a class="button secondary" href="#support" data-i18n="ask_help">Ask for help</a>
-        </div>
-        <div class="quick-stats" aria-label="Center highlights">
-          <div><strong>4</strong><span>audiences served</span></div>
-          <div><strong>12+</strong><span>starter resources</span></div>
-          <div><strong>1</strong><span>shared community</span></div>
-        </div>
-      </div>
-      <div class="hero-card" aria-label="Welcome message">
-        <div class="speech-bubble" data-i18n="welcome">Welcome</div>
-        <h2 data-i18n="belong">You belong here.</h2>
-        <p data-i18n="welcome_text">
-          School systems can feel complicated—especially in a new language.
-          This center breaks information into simple steps and connects people to the right support.
-        </p>
-        <ul>
-          <li data-i18n="welcome_1">Understand school processes</li>
-          <li data-i18n="welcome_2">Support learning at home</li>
-          <li data-i18n="welcome_3">Find tools for differentiated instruction</li>
-        </ul>
-      </div>
-    </section>
+<nav>
+<a href="#families">Families</a>
+<a href="#educators">Educators</a>
+<a href="#community">Community</a>
+</nav>
 
-    <section class="section" id="resources">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="finder">Resource Finder</p>
-        <h2 data-i18n="finder_title">Start with what you need today.</h2>
-        <p data-i18n="finder_text">Search or filter the cards below. Each resource includes a clear next step.</p>
-      </div>
+<section id="families">
+<h2>Families</h2>
+<p>Resources for English, Español, Kreyòl Ayisyen, and Português are coming soon.</p>
+</section>
 
-      <div class="resource-controls">
-        <label class="search-box">
-          <span class="sr-only">Search resources</span>
-          <input id="searchInput" type="search" placeholder="Search: enrollment, reading, family..." data-i18n-placeholder="search_placeholder" />
-        </label>
-        <div class="filters" aria-label="Filter resources">
-          <button class="filter active" data-filter="all" data-i18n="filter_all">All</button>
-          <button class="filter" data-filter="family" data-i18n="filter_families">Families</button>
-          <button class="filter" data-filter="student" data-i18n="filter_students">Students</button>
-          <button class="filter" data-filter="educator" data-i18n="filter_educators">Educators</button>
-          <button class="filter" data-filter="community" data-i18n="filter_community">Community</button>
-        </div>
-      </div>
+<section id="educators">
+<h2>Educators</h2>
+<p>This site will include lesson supports, differentiated instruction resources, and AI-powered tools.</p>
+<button onclick="showMessage()">Try Demo</button>
+<p id="demo"></p>
+</section>
 
-      <div class="resource-grid" id="resourceGrid">
-        <article class="resource-card" data-category="family community" data-search="school enrollment registration documents family">
-          <span class="tag">Families</span>
-          <h3>School Enrollment Checklist</h3>
-          <p>A simple checklist of common documents, questions to ask, and people who can help.</p>
-          <button class="text-link" data-modal="enrollment">View checklist →</button>
-        </article>
+<section id="community">
+<h2>Community Resources</h2>
+<ul>
+<li>School Enrollment</li>
+<li>Food Assistance</li>
+<li>Healthcare</li>
+<li>Adult ESL Classes</li>
+<li>After-School Programs</li>
+</ul>
+</section>
 
-        <article class="resource-card" data-category="family student" data-search="parent conference teacher meeting questions communication">
-          <span class="tag">Families</span>
-          <h3>Prepare for a Teacher Conference</h3>
-          <p>Use ready-to-ask questions about grades, language development, attendance, and support.</p>
-          <button class="text-link" data-modal="conference">See questions →</button>
-        </article>
-
-        <article class="resource-card" data-category="student family" data-search="reading home practice vocabulary english learner">
-          <span class="tag">Students</span>
-          <h3>Reading at Home</h3>
-          <p>Five low-pressure ways families can build vocabulary and comprehension in any language.</p>
-          <button class="text-link" data-modal="reading">Try the routine →</button>
-        </article>
-
-        <article class="resource-card" data-category="educator" data-search="differentiate lesson WIDA proficiency sentence frames educator teacher">
-          <span class="tag">Educators</span>
-          <h3>Differentiation Quick Guide</h3>
-          <p>Adjust one grade-level task for emerging, developing, and expanding English learners.</p>
-          <button class="text-link" data-modal="differentiate">Open guide →</button>
-        </article>
-
-        <article class="resource-card" data-category="educator" data-search="family communication plain language translation message teacher">
-          <span class="tag">Educators</span>
-          <h3>Family-Friendly Communication</h3>
-          <p>A short checklist for writing clear, respectful, and translation-ready school messages.</p>
-          <button class="text-link" data-modal="communication">Use checklist →</button>
-        </article>
-
-        <article class="resource-card" data-category="community family" data-search="community partner support referral food health housing transportation">
-          <span class="tag">Community</span>
-          <h3>Community Referral Map</h3>
-          <p>Organize local supports by need, eligibility, language access, and next step.</p>
-          <button class="text-link" data-modal="referral">Build a referral →</button>
-        </article>
-
-        <article class="resource-card" data-category="student" data-search="student self advocacy classroom help sentence starters">
-          <span class="tag">Students</span>
-          <h3>Classroom Help Phrases</h3>
-          <p>Practice useful phrases for asking questions, requesting clarification, and joining discussions.</p>
-          <button class="text-link" data-modal="phrases">Practice phrases →</button>
-        </article>
-
-        <article class="resource-card" data-category="educator community" data-search="workshop training nontechnical AI digital tools staff">
-          <span class="tag">Educators</span>
-          <h3>Technology Training Planner</h3>
-          <p>Plan a short, practical workshop for colleagues with mixed levels of technical confidence.</p>
-          <button class="text-link" data-modal="training">Plan a session →</button>
-        </article>
-      </div>
-      <p class="no-results" id="noResults" hidden data-i18n="no_results">No resources match your search yet.</p>
-    </section>
-
-    <section class="split-section" id="families">
-      <div>
-        <p class="eyebrow" data-i18n="families_eyebrow">For Families</p>
-        <h2 data-i18n="families_title">School information should be understandable.</h2>
-        <p data-i18n="families_text">
-          Families deserve clear explanations, respectful communication, and a real voice in their children's education.
-          These steps can help you prepare for conversations with school staff.
-        </p>
-      </div>
-      <ol class="steps">
-        <li><span>1</span><div><h3>Write down your goal</h3><p>What do you want to understand or change?</p></div></li>
-        <li><span>2</span><div><h3>Gather examples</h3><p>Bring grades, messages, student work, or dates.</p></div></li>
-        <li><span>3</span><div><h3>Ask for language support</h3><p>Request interpretation or translated information when needed.</p></div></li>
-        <li><span>4</span><div><h3>Confirm the next step</h3><p>Before leaving, agree on who will do what and by when.</p></div></li>
-      </ol>
-    </section>
-
-    <section class="section soft" id="educators">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="educators_eyebrow">For Educators</p>
-        <h2 data-i18n="educators_title">Differentiate without starting over.</h2>
-        <p data-i18n="educators_text">Use the same learning goal while adjusting language demands and support.</p>
-      </div>
-
-      <div class="tool-card">
-        <div>
-          <h3>Quick Differentiation Builder</h3>
-          <p>Create a starting point for a lesson. Review and adjust every suggestion before using it with students.</p>
-        </div>
-        <form id="lessonForm" class="lesson-form">
-          <label>Grade level
-            <select id="grade">
-              <option>K–2</option><option>3–5</option><option>6–8</option><option>9–12</option>
-            </select>
-          </label>
-          <label>Topic
-            <input id="topic" required placeholder="Example: the water cycle" />
-          </label>
-          <label>English proficiency
-            <select id="level">
-              <option>Emerging</option><option>Developing</option><option>Expanding</option>
-            </select>
-          </label>
-          <button class="button primary" type="submit">Create starting point</button>
-        </form>
-        <div class="lesson-output" id="lessonOutput" aria-live="polite">
-          Complete the form to generate a simple, editable starting point.
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="support">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="support_eyebrow">Request Support</p>
-        <h2 data-i18n="support_title">Tell us what would help.</h2>
-        <p data-i18n="support_text">This demo stores requests only in your browser. It does not send personal information anywhere.</p>
-      </div>
-
-      <form id="supportForm" class="support-form">
-        <label>Your role
-          <select id="role" required>
-            <option value="">Select one</option>
-            <option>Student</option><option>Parent or caregiver</option><option>Educator</option><option>Community partner</option>
-          </select>
-        </label>
-        <label>Type of support
-          <select id="need" required>
-            <option value="">Select one</option>
-            <option>School enrollment</option><option>Family communication</option><option>Academic support</option><option>Teacher resources</option><option>Community referral</option>
-          </select>
-        </label>
-        <label class="full">What do you need help with?
-          <textarea id="message" rows="5" required placeholder="Please avoid including private or sensitive information."></textarea>
-        </label>
-        <button class="button primary" type="submit">Save request</button>
-        <p id="formMessage" class="form-message" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <strong data-i18n="brand">ESOL Community Resource Center</strong>
-      <p data-i18n="footer_text">A prototype created to make educational support easier to find and use.</p>
-    </div>
-    <p data-i18n="footer_credit">Designed by Natalie Gill · 2026</p>
-  </footer>
-
-  <dialog id="resourceModal">
-    <button class="close-modal" aria-label="Close">×</button>
-    <div id="modalContent"></div>
-  </dialog>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
